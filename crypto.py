@@ -14,8 +14,8 @@ print("github:yahya778")
 
 r = requests.get(input("enter api url:"))
 r = r.json()
-usd = r['USD']
-eur = r['EUR']
+usd = r[input("enter 1 coin symbol usd,eur?")]
+eur = r[input("enter 2 coin symbol,usd,eur?")]
 print("usd=")
 print (usd)
 print("euro=")
